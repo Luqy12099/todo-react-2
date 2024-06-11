@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { TodoContext } from '../App'
 
-function TodoItem({todo, toggleCompleted, deleteTodo}){
+function TodoItem({todo}){
+  const { toggleCompleted, deleteTodo } = useContext(TodoContext);
 
   function getTodoTitleStyle(){
     if (todo.completed) {
@@ -9,7 +11,6 @@ function TodoItem({todo, toggleCompleted, deleteTodo}){
       return { textDecoration: 'none' }
     }
   }
-
 
     return (
         <div style={styles.todoItem}>
