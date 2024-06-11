@@ -46,7 +46,7 @@ function App() {
     }
 
     const newTodo = {
-      id: todos.length + 1,
+      id: Date.now(), 
       title: todoTitle,
       completed: false,
     }

@@ -46,10 +46,12 @@ const styles = {
     width: '40%',
     fontSize: '16px',
     padding: '0 16px',
+    fontFamily: 'Georgia, serif',
   },
   button: {
     height: '72px',
     fontSize: '16px',
+    fontFamily: 'Georgia, serif',
   },
 }
 
